@@ -99,7 +99,7 @@ const generateGalaxy = () => {
     scene.add(galaxy)
 }
 
-gui.add(parameters, 'count').name('Stars Count').min(100).max(200000000).step(100).onFinishChange(generateGalaxy)
+gui.add(parameters, 'count').name('Stars Count').min(100).max(200000).step(100).onFinishChange(generateGalaxy)
 gui.add(parameters, 'size').name('Stars Size').min(.001).max(.1).step(.001).onFinishChange(generateGalaxy)
 gui.add(parameters, 'width').name('Galaxy Width').min(1).max(15).step(.01).onFinishChange(generateGalaxy)
 gui.add(parameters, 'radius').name('Galaxy Radius').min(.1).max(20).step(.01).onFinishChange(generateGalaxy)
